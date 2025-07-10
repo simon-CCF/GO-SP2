@@ -7,3 +7,6 @@
 - 使用 Goroutine 處理後台訂單狀態異動，並記錄 log 日誌
 - 專案完整容器化，透過 Docker Compose 管理 API、DB、Redis 等服務
 - 使用 GitHub Actions 實作自動化部署，專案可一鍵上線至 Render
+
+##可改進地方:
+加密方式改成從環境變數取得:var jwtKey = []byte(os.Getenv("JWT_SECRET"))
